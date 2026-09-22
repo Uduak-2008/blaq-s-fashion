@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* pushes footer down by filling remaining space */
+}
+body {
+  background: linear-gradient(180deg, #0a0e1f 0%, #12172b 100%);
+}
+header {
+  background-image: url('picture1.png');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding: 1rem;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  color:  #c9a24b;
+}
+span {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: var(--color-accent); /* gold, ties into your luxury palette */
+  font-size: 1.8rem; /* script fonts often need to be a bit bigger to read well */
+}
+nav {
+  display: flex;
+  gap: 1rem;
+}
+li {
+  list-style-type: none;
+  padding: 0.3rem;
+}
+a {
+  text-decoration: none;
+  color:  #c9a24b;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  padding: 20px;
+  border-bottom: 1px solid  #c9a24b;
+}
+.dropdownlist {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute; /* takes it OUT of normal document flow */
+  top: 100%;
+  right: 40px; /* or left, depending on where your hamburger is */
+  background-color: rgba(10, 14, 31, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown label {
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  color: rgba(10, 14, 31, 0.9);
+  margin: 40px;
+}
+label {
+  background:  #c9a24b;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked ~ .dropdownlist {
+  display: flex;
+}
+.text {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  padding: 20px;
+  color:  #c9a24b;
+  text-shadow: 2px 2px 4px rgb(140, 113, 52);
+}
+
+footer {
+  background-image: url('picture2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  color:  #c9a24b;
+  text-align: right;
+  position: relative;
+  min-height: 20px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* pushes both lines to the right */
+  text-align: right;
+}
+
+.footer-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin: 0 0 0.2rem 0;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding: 1;
+  font-size: 0.3rem;
+  color: var(--color-text-muted);
+}
