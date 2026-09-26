@@ -98,11 +98,93 @@ label {
   text-shadow: 2px 2px 4px rgb(140, 113, 52);
 }
 
+#box {
+  padding: 20px;
+}
+.item {
+  width: 150px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7); /* ONE shadow for the whole card */
+}
+.item img{
+  width: 150px;
+  max-width: 1000px;
+  border-radius: 15px 15px 0 0;
+  display: block;
+}
+.text-box {
+  align-items: center;
+  padding: 1rem;
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #5c1a1a;
+    width: 150px;
+    color: #c9a24b;
+    max-width: 1000px;
+    border-radius: 0 0 15px 15px;
+}
+details summary a{
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 1rem;
+}
+.text-box details summary {
+    font-size: 18px
+    font-weight: 600;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+}
+
+details summary {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+summary::marker {
+    content: "";
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+.background a {
+  padding: 20px;
+  background: rgba(201, 162, 75, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 162, 75, 0.4);
+  box-shadow: 0 4px 20px rgba(201, 162, 75, 0.15), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #c9a24b;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 footer {
   background-image: url('picture2.png');
   background-size: cover;
   background-position: center;
-  padding: 1rem;
+  padding: 1.2rem;
   color:  #c9a24b;
   text-align: right;
   position: relative;

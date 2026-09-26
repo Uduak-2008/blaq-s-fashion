@@ -1,0 +1,37 @@
+section {
+  padding: 40px 20px;
+  text-align: center;
+  align-items: center;
+  color: #c9a24b;
+}
+img {
+  width: 350px;
+  height: 600px;
+  border-radius: 8px;
+}
+h1,h2{
+  padding: 20px;
+}
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+button {
+  display: flex;
+  padding: 20px;
+  background: rgba(201, 162, 75, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 162, 75, 0.4);
+  box-shadow: 0 4px 20px rgba(201, 162, 75, 0.15), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #c9a24b;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
