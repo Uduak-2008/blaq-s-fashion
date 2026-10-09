@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="splashScreen">
+    <div class="splash-logo">
+        <span>Blaq's Fashion</span>
+    </div>
+    <p class="splash-text">Home Of Beauty</p>
+</div>
     <header>
       <span>Blaq's Fashion</span>
       <nav>
@@ -20,7 +26,7 @@
           <input type="checkbox" id="menu-toggle" class="menu-toggle">
   <label for="menu-toggle">☰</label>
         <ul class="dropdownlist">
-          <li><a href="">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="">Shop</a></li>
            <li><a href="">About</a></li>
            <li><a href="">LookBook</a></li>
@@ -80,5 +86,13 @@
     <p class="footer-copyright">&copy; 2026 Blaq's Fashion. All rights reserved.</p>
   </div>
     </footer>
+      <script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var splash = document.getElementById('splashScreen');
+    splash.style.display = 'none';
+  }, 3000);
+});
+</script>
   </body>
 </html>
