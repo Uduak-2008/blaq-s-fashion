@@ -150,6 +150,10 @@ label {
   display: flex;
   flex-direction: column;
 }
+.item:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
 
 .item img {
   aspect-ratio: 3/4;
@@ -175,6 +179,17 @@ label {
     height: clamp(160px, 20vw, 300px);
     background-position: center;
   }
+.splash-logo span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #c9a24b;
+}
+.text-box {
+  font-size: clamp(0.6rem, 1vw, 1.2rem);
+}
+details summary a{
+  font-size: clamp(0.4rem, 1vw, 1.2rem);
+}
 }
 .text-box {
   flex: 1;
@@ -195,14 +210,22 @@ label {
   background-color: #5c1a1a;
   color: #c9a24b;
 }
+.item:nth-child(1) section a:hover{
+  background: #420f0f;
+  padding: 16px;
+  border-radius: 8px;
+}
 .item:nth-child(2) section{
   background-color: #2e0f17; 
   color: #e8dcc8;
 }
-.item:nth-child(2) section a,
-.item:nth-child(2) section summary a:hover{
+.item:nth-child(2) section a{
   color: #e8dcc8;
-  box-shadow: #d34467;
+}
+.item:nth-child(2) section a:hover {
+  background: #18090d;
+  padding: 20px;
+  border-radius: 8px;
 }
 .item:nth-child(3) section {
   background-color: #6b3a4a;
@@ -211,9 +234,20 @@ label {
 .item:nth-child(3) section a {
   padding: 12px;
 }
+.item:nth-child(3) section a:hover {
+  background: #521f30;
+  padding: 16px;
+  border-radius: 8px;
+}
 .item:nth-child(4) section {
   background-color: #6b2d4a;
   color: #c9a24b;
+}
+.item:nth-child(4) section a:hover {
+  background: #5a1d3a;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(160, 120, 35, 0.5);
 }
 details summary a{
   text-decoration: none;
