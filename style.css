@@ -255,6 +255,13 @@ details summary a{
   font-size: 0.7rem;
   font-family:"Segoe UI", Arial, sans-serif ;
 }
+.text-box summary {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px 0;
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+}
 .text-box details summary {
     font-size: 18px;
     font-weight: 600;
@@ -323,13 +330,13 @@ footer {
 
 .footer-brand {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 3vw, 3rem);
   color: #c9a24b;
   margin-bottom: 0.3rem;
 }
 
 .footer-copyright {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
   color: #d4cfc0;
   margin: 0;
   padding: 0;
