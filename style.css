@@ -63,7 +63,7 @@ span {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   color: var(--color-accent); /* gold, ties into your luxury palette */
-  font-size: 1.8rem; /* script fonts often need to be a bit bigger to read well */
+  font-size: clamp(1.8rem, 4vw, 2rem); /* script fonts often need to be a bit bigger to read well */
 }
 nav {
   display: flex;
@@ -90,7 +90,7 @@ a {
   right: 40px; /* or left, depending on where your hamburger is */
   background-color: rgba(10, 14, 31, 0.9);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   z-index: 10;
 }
 .dropdown {
@@ -125,6 +125,7 @@ label:hover {
 
 .menu-toggle:checked ~ .dropdownlist {
   display: flex;
+  margin: 0.8rem;
 }
 .text {
   text-align: center;
