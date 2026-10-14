@@ -171,7 +171,7 @@ label:hover {
 @media (min-width: 700px) {
 #box {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: clamp(20px, 3vw, 50px);
     padding: clamp(20px, 4vw, 60px);
